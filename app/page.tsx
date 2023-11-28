@@ -3,7 +3,7 @@ import { ThreeMap } from "./map";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <ThreeMap />
     </main>
   );
