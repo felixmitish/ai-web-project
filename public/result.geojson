@@ -1,0 +1,21 @@
+{
+"type": "FeatureCollection",
+"features": [
+{ "type": "Feature", "properties": { "lat": 43.7329927, "lon": 7.2123031, "cars": 0.02288818359375, "trees": 17.591476440429688 }, "geometry": { "type": "Point", "coordinates": [ 7.2123031, 43.7329927 ] } },
+{ "type": "Feature", "properties": { "lat": 44.089252, "lon": 6.9717029, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 6.9717029, 44.089252 ] } },
+{ "type": "Feature", "properties": { "lat": 43.94409695, "lon": 7.03658385, "cars": 0.023651123046875, "trees": 77.975845336914062 }, "geometry": { "type": "Point", "coordinates": [ 7.03658385, 43.94409695 ] } },
+{ "type": "Feature", "properties": { "lat": 44.0985739, "lon": 7.182033, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 7.182033, 44.0985739 ] } },
+{ "type": "Feature", "properties": { "lat": 43.9557449, "lon": 7.3692276, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 7.3692276, 43.9557449 ] } },
+{ "type": "Feature", "properties": { "lat": 43.9612641, "lon": 7.1997691, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 7.1997691, 43.9612641 ] } },
+{ "type": "Feature", "properties": { "lat": 44.1452844, "lon": 7.2005459, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 7.2005459, 44.1452844 ] } },
+{ "type": "Feature", "properties": { "lat": 44.1961429, "lon": 6.6955419, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 6.6955419, 44.1961429 ] } },
+{ "type": "Feature", "properties": { "lat": 44.0434219, "lon": 7.6012755, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 7.6012755, 44.0434219 ] } },
+{ "type": "Feature", "properties": { "lat": 44.0354522, "lon": 6.8280834, "cars": 0.0, "trees": 32.650375366210938 }, "geometry": { "type": "Point", "coordinates": [ 6.8280834, 44.0354522 ] } },
+{ "type": "Feature", "properties": { "lat": 43.7626585, "lon": 7.2031663, "cars": 1.313018798828125, "trees": 29.464340209960938 }, "geometry": { "type": "Point", "coordinates": [ 7.2031663, 43.7626585 ] } },
+{ "type": "Feature", "properties": { "lat": 43.8168471, "lon": 7.4842416, "cars": 0.0, "trees": 182.54508972167969 }, "geometry": { "type": "Point", "coordinates": [ 7.4842416, 43.8168471 ] } },
+{ "type": "Feature", "properties": { "lat": 43.6829028, "lon": 7.2339243, "cars": 5.950927734375, "trees": 4.3025970458984375 }, "geometry": { "type": "Point", "coordinates": [ 7.2339243, 43.6829028 ] } },
+{ "type": "Feature", "properties": { "lat": 44.149188292307691, "lon": 7.5707836538461537, "cars": 0.6893157958984375, "trees": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 7.570783653846154, 44.149188292307691 ] } },
+{ "type": "Feature", "properties": { "lat": 44.2454725, "lon": 6.7972838, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 6.7972838, 44.2454725 ] } },
+{ "type": "Feature", "properties": { "lat": 43.9166389, "lon": 7.46600925, "cars": 0.0, "trees": 0.0885009765625 }, "geometry": { "type": "Point", "coordinates": [ 7.46600925, 43.9166389 ] } }
+]
+}
