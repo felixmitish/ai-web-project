@@ -16,6 +16,7 @@ type PointProps = {
   lon: number;
   angle: number;
 };
+import { X } from "lucide-react";
 export function ThreeMap() {
   const MAPBOX_ACCESS_TOKEN =
     "pk.eyJ1IjoiZm1pdGlzaCIsImEiOiJjbHBoaW5jbHEwMmV3Mml0Nzgwb2M1bHl1In0.8K_qhppmNoWyHNKEwEdkuQ";
@@ -46,7 +47,7 @@ export function ThreeMap() {
       </button> */}
       <div
         className="absolute top-5
-     left-5 w-[232px] h-[359px] bg-[#D9D9D94D]/50 backdrop-blur-sm rounded-sm p-6  space-y-2.5 flex flex-col"
+     left-5 w-[232px] h-[460px] bg-[#D9D9D94D]/50 backdrop-blur-sm rounded-sm p-6  space-y-2.5 flex flex-col"
       >
         {/* here I want to make a rectangle */}
         {/* <div className="w-[232px] h-[359px] bg-white/50 backdrop-blur-sm border-r-4 rounded-sm"> */}
@@ -60,6 +61,8 @@ export function ThreeMap() {
           This is an interactive dashboard where you can compare how Nice is
           digested with cars versus how green it is.
         </p>
+        <h2 className="text-lg font-bold text-white ">Select Layer</h2>
+        <div className="w-full h-[1px] bg-white/50"></div>
         <div className="relative flex justify-between items-center">
           <Select
             onValueChange={function (e) {
@@ -78,68 +81,89 @@ export function ThreeMap() {
             </SelectContent>
           </Select>
         </div>
+        <h2 className="text-lg font-bold text-white ">Contact Author</h2>
+        <div className="w-full h-[1px] bg-white/50"></div>
+        <div>
+          <p className="text-white text-lg">Feliks Mitish</p>
+          <p className="text-white text-sm">felix.mitish@gmail.com</p>
+        </div>
+        {/* here i want to make a button which will open push window */}
+        <button className="bg-white/60 rounded-sm p-2 text-white">Info</button>
       </div>
       {selectedPoint && (
-        <div className="absolute bottom-5 left-5 w-[370px] h-[210px] bg-[#D9D9D94D]/50 backdrop-blur-sm rounded-sm p-6 flex flex-col">
-          <div className="flex overflow-hidden relative ">
-            <Image
-              className=" object-contain w-[25%]"
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-0.jpg`}
-            />
-            <Image
-              className=" object-contain w-[25%] "
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-90.jpg`}
-            />
-            <Image
-              className=" object-contain w-[25%]"
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-180.jpg`}
-            />
-            <Image
-              className=" object-contain w-[25%]"
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-270.jpg`}
-            />
+        <div className="absolute bottom-5 left-5 w-[340px] h-[200px] bg-[#D9D9D94D]/50 backdrop-blur-sm rounded-sm flex flex-col">
+          <div className="flex flex-col items-end p-2 ">
+            <button
+              onClick={function () {
+                setSelectedPoint(null);
+              }}
+              className="absolute flex items-center flex-col w-6 h-6 z-10 text-white"
+            >
+              <X />
+            </button>
           </div>
-          <div className="flex overflow-hidden relative">
-            <Image
-              className=" object-contain w-[25%]"
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-0.jpg`}
-            />
-            <Image
-              className=" object-contain w-[25%]"
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-90.jpg`}
-            />
-            <Image
-              className=" object-contain w-[25%]"
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-180.jpg`}
-            />
-            <Image
-              className=" object-contain w-[25%]"
-              alt="original image"
-              width={640}
-              height={640}
-              src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-270.jpg`}
-            />
+
+          <div className="absolute p-4 w-[325px] h-[180px] top-3 ">
+            <div className="flex overflow-hidden relative">
+              <Image
+                className=" object-contain w-[25%]"
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-0.jpg`}
+              />
+              <Image
+                className=" object-contain w-[25%] "
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-90.jpg`}
+              />
+              <Image
+                className=" object-contain w-[25%]"
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-180.jpg`}
+              />
+              <Image
+                className=" object-contain w-[25%]"
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/original-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-270.jpg`}
+              />
+            </div>
+            <div className="flex overflow-hidden relative">
+              <Image
+                className=" object-contain w-[25%]"
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-0.jpg`}
+              />
+              <Image
+                className=" object-contain w-[25%]"
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-90.jpg`}
+              />
+              <Image
+                className=" object-contain w-[25%]"
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-180.jpg`}
+              />
+              <Image
+                className=" object-contain w-[25%]"
+                alt="original image"
+                width={640}
+                height={640}
+                src={`https://ai-segmentatioon.s3.eu-west-3.amazonaws.com/segmented-images/street_view_${selectedPoint.lat}-${selectedPoint.lon}-270.jpg`}
+              />
+            </div>
           </div>
         </div>
       )}
