@@ -17,6 +17,7 @@ type PointProps = {
   angle: number;
 };
 import { X } from "lucide-react";
+
 export function ThreeMap() {
   const MAPBOX_ACCESS_TOKEN =
     "pk.eyJ1IjoiZm1pdGlzaCIsImEiOiJjbHBoaW5jbHEwMmV3Mml0Nzgwb2M1bHl1In0.8K_qhppmNoWyHNKEwEdkuQ";
@@ -47,7 +48,7 @@ export function ThreeMap() {
       </button> */}
       <div
         className="absolute top-5
-     left-5 w-[232px] h-[460px] bg-[#D9D9D94D]/50 backdrop-blur-sm rounded-sm p-6  space-y-2.5 flex flex-col"
+     left-5 w-[232px] h-[530px] bg-[#D9D9D94D]/50 backdrop-blur-sm rounded-sm p-6  space-y-2.5 flex flex-col"
       >
         {/* here I want to make a rectangle */}
         {/* <div className="w-[232px] h-[359px] bg-white/50 backdrop-blur-sm border-r-4 rounded-sm"> */}
@@ -86,9 +87,31 @@ export function ThreeMap() {
         <div>
           <p className="text-white text-lg">Feliks Mitish</p>
           <p className="text-white text-sm">felix.mitish@gmail.com</p>
+          <div className="w-full h-[1px] bg-white/50"></div>
+          <h3 className="text-white text-lg       font-bold relative top-2">
+            Information
+          </h3>
+          <div className="relative top-2">
+            <p className="text-white text-sm">
+              <span className="inline-block w-[10px] h-[10px] bg-red-600 rounded-full border-2 border-red-600"></span>
+              -0%
+            </p>
+            <p className="text-white text-sm">
+              <span className="inline-block w-[10px] h-[10px] bg-orange-600 rounded-full border-2 border-orange-600"></span>
+              -30%
+            </p>
+            <p className="static text-white text-sm">
+              <span className="inline-block w-[10px] h-[10px] bg-yellow-400 rounded-full border-2 border-yellow-400"></span>
+              -60%
+            </p>
+            <p className="text-white text-sm">
+              <span className="inline-block w-[10px] h-[10px] bg-green-600 rounded-full border-2 border-green-600"></span>
+              -100%
+            </p>
+          </div>
         </div>
+
         {/* here i want to make a button which will open push window */}
-        <button className="bg-white/60 rounded-sm p-2 text-white">Info</button>
       </div>
       {selectedPoint && (
         <div className="absolute bottom-5 left-5 w-[340px] h-[200px] bg-[#D9D9D94D]/50 backdrop-blur-sm rounded-sm flex flex-col">
